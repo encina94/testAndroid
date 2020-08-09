@@ -15,6 +15,7 @@ class MainActivity : AppCompatActivity() {
         nullSafety()
         println(sumTwoNumber(2,4))
         createObject()
+        executeInheretClass()
     }
     private fun constAndVariables(){
         //Variable
@@ -208,6 +209,17 @@ class MainActivity : AppCompatActivity() {
         val valor = objectTest.ageString(12)
         println(valor)
     }
+
+    fun executeInheretClass(){
+        val jose = EnemyInheret("Jose",30,10)
+        val mauro = EnemyInheret("mario", 50, 17)
+        val uglyTroll = TrollSubClass("Ugly",50, 18)
+        uglyTroll.takeDamage(8)
+            }
+
+    //Clases y propiedades publicas o privadas de una clase
+    //Si se coloca una propiedad como private si o si hay que crear una funcion getter para obtenerla y setter
+    //Si la propiedad es publica entonces no se crea ningun getter y se accede asi nomas
 
 
 }
